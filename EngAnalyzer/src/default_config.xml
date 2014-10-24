@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!-- 
+ *  Copyleft (C) 2014 Jinho Lee
+ *  All rights reserved.
+ * 
+ *  THIS SOFTWARE IS PROVIDED BY JINHO LEE ''AS IS'' AND ANY EXPRESS OR 
+ *  IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ *  OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN
+ *  NO EVENT SHALL KYLE GORMAN BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ *  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+ *  TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+ *  PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ *  LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ *  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ *  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ * 
+ *  default_config.xml : Config for application
+ *  @author Jinho Lee <jammun@gmail.com>, <jhlee@dlab.kr>
+ *   
+ -->
+<config>
+
+		<!-- 
+		 * input 파일 환경설정 정의.
+		 * file : input file
+		 * targetColumn : 원본파일 분석대상 컬럼의 순번을 적는다 (0 부터 시작) 
+		 -->
+	<input>
+		<file>resources/bestbuy_lgtv_100.txt</file>
+		<model>models/english-left3words-distsim.tagger</model>
+	</input>
+	<numberOfThreads>4</numberOfThreads>
+	
+</config>
